@@ -28,7 +28,9 @@ jobs:
           pip install jupyter-book jupytext
 
       - name: Build
-        run: jupyter-book build .
+       run: |
+  jupyter-book init
+  jupyter-book build .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
