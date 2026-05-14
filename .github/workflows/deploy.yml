@@ -24,10 +24,9 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install sphinx nbsphinx sphinx-rtd-theme
-          sudo apt-get install -y pandoc
-
+  run: |
+    pip install sphinx nbsphinx sphinx-rtd-theme sphinx-togglebutton sphinx-rtd-dark-mode sphinx-copybutton sphinx-design
+    sudo apt-get install -y pandoc
       - name: Build
         run: sphinx-build -b html . _build/html
 
