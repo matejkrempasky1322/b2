@@ -18,3 +18,27 @@ exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = []
+nbsphinx_prolog = """
+.. raw:: html
+
+    <script>
+    window.addEventListener('load', function() {
+        var inputs = document.querySelectorAll('.nbinput');
+        inputs.forEach(function(el) {
+            var btn = document.createElement('button');
+            btn.textContent = 'Zobraziť kód';
+            btn.className = 'toggle-btn';
+            btn.style.cssText = 'background:#2980b9;color:white;border:none;padding:4px 10px;border-radius:3px;cursor:pointer;margin:4px 0;';
+            var content = el.querySelector('.input_area');
+            if(content) {
+                content.style.display = 'none';
+                btn.addEventListener('click', function() {
+                    content.style.display = content.style.display === 'none' ? '' : 'none';
+                    btn.textContent = content.style.display === 'none' ? 'Zobraziť kód' : 'Skryť kód';
+                });
+                el.insertBefore(btn, content);
+            }
+        });
+    });
+    </script>
+"""
