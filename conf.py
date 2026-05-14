@@ -12,7 +12,7 @@ extensions = [
 ]
 togglebutton_hint = "Zobraziť kód"
 togglebutton_hint_hide = "Skryť kód"
-default_dark_mode = False
+default_dark_mode = True
 language = 'sk'
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
