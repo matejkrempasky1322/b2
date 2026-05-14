@@ -10,7 +10,8 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_design',
 ]
-
+togglebutton_hint = "Zobraziť kód"
+togglebutton_hint_hide = "Skryť kód"
 default_dark_mode = False
 language = 'sk'
 exclude_patterns = ['_build', '**.ipynb_checkpoints']

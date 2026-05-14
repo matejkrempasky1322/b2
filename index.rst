@@ -1,6 +1,7 @@
 Interaktívna učebnica fyziky
 ============================
-
+.. toggle-header::
+   :header: Zobraziť/Skryť všetok kód
 .. toctree::
    :maxdepth: 2
    :caption: Obsah:
