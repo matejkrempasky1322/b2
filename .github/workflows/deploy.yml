@@ -20,8 +20,9 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: |
-          pip install sphinx nbsphinx sphinx-rtd-theme sphinx-togglebutton sphinx-rtd-dark-mode sphinx-copybutton sphinx-design
+          pip install sphinx nbsphinx sphinx-rtd-theme sphinx-togglebutton sphinx-rtd-dark-mode sphinx-copybutton sphinx-design ipykernel jupyter
           sudo apt-get install -y pandoc
+          python -m ipykernel install --user --name python3
       - name: Build
         run: sphinx-build -b html . _build/html
       - name: Upload artifact
