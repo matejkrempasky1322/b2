@@ -9,7 +9,7 @@ Interaktívna učebnica fyziky
    00_Sphinx
    00_Sphinx_instalacia
    00_Sphinx_Predloha
-   Sphinx_Konfiguracia
+   00_Sphinx_Konfiguracia
 
 .. toctree::
    :maxdepth: 2
