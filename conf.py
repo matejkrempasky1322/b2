@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 project = 'Interaktívna učebnica fyziky'
 copyright = '2026, Matej Krempaský'
 author = 'Matej Krempaský'
@@ -10,14 +11,16 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_design',
 ]
+
 togglebutton_hint = "Zobraziť kód"
 togglebutton_hint_hide = "Skryť kód"
 default_dark_mode = True
 language = 'sk'
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
-
 html_theme = 'sphinx_rtd_theme'
 html_static_path = []
+nbsphinx_allow_errors = True
+
 nbsphinx_prolog = """
 .. raw:: html
 
