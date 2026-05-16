@@ -18,6 +18,7 @@ default_dark_mode = True
 language = 'sk'
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
 html_theme = 'sphinx_rtd_theme'
+html_logo = "FST.png"
 html_static_path = []
 nbsphinx_allow_errors = True
 nbsphinx_execute = 'never'
