@@ -28,7 +28,7 @@ Interaktívna učebnica fyziky
    :maxdepth: 2
    :caption: Fyzikálna učebnica:
 
-   04_Kmitanie
+   04_Kinematika
    05_Dynamika
    06_Termodynamika
    07_Kmitanie
